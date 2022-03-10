@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Parcial 2</title>
+    <script src="./js/login.js" defer></script>
+</head>
+
+<body>
+    <div id="popup-menu" style="display: none;">
+        <span id="close-popup-menu">X</span>
+        <h2>Ingreso/Registro</h2>
+        <p errormessage>Hola amigo</p>
+        <form action="#" method="post">
+            <input type="email" name="email" id="login-email" placeholder="Email..."
+                aria-errormessage="This email doesn't exists" required>
+            <input type="password" name="password" id="login-password" placeholder="Password..."
+                aria-errormessage="Incorrect password" required>
+            <input type="submit" value="Ingresar">
+            <a href="#">Registrar</a>
+        </form>
+    </div>
+
+    <div class="global-container">
+        <header>
+            <img id="logo" src="./img/logo.png" alt="Logo">
+            <div class="nav-interactions">
+                <button id="login-popup" type="button">Acceso</button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Cursos</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Miembros</a></li>
+                        <li><a href="#">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <section class="img-and-register">
+                <article class="left-image">
+                    <img src="./img/main_img0.png" alt="Image 0">
+                    <img src="./img/main_img1.png" alt="Image 1">
+                </article>
+
+                <article class="right-form">
+                    <h1>Inicia tus clase de manejo.</h1>
+                    <h2>¡Agenda tu cita de manera fácil!</h2>
+                    <form action="#" method="post">
+                        <input type="text" name="name" id="input-name" placeholder="Nombre Completo">
+                        <input type="email" name="email" id="input-email" placeholder="Correo Electrónico">
+                        <h4>Seleccione una de nuestras sucursales y la fecha para comenzar.</h4>
+                        <span>
+                            <input list="sucursal-list" name="sucursal" id="input-sucursal"
+                                placeholder="Elija la sucursal">
+                            <datalist id="sucursal-list">
+                                <option>Sucursal0</option>
+                                <option>Sucursal1</option>
+                                <option>Sucursal2</option>
+                                <option>Sucursal3</option>
+                            </datalist>
+                            <input type="date" name="date" id="input-date" placeholder="Fecha de inicio">
+                        </span>
+                        <input type="submit" value="Reserver ahora">
+                        <h4>Al agendar un cita nos reservamos el derecho de disponibilidad, por lo que trataremos de
+                            ajustarnos en lo posible.</h4>
+                        <h3>¡Vive la experiencia FAST LEARN!</h3>
+                    </form>
+                </article>
+            </section>
+            <aside>
+                <h2>En marzo ¡Iniciamos nuestros primeros cursos!</h2>
+                <span>
+                    <div class="card">
+                        <img src="./img/card-img0.png" alt="card-img">
+                        <h3>Curso para principiantes</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <button type="button">Reservar su espacio</button>
+                    </div>
+                    <div class="card">
+                        <img src="./img/card-img0.png" alt="card-img">
+                        <h3>Curso para principiantes</h3>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+                        <button type="button">Reservar su espacio</button>
+                    </div>
+                </span>
+            </aside>
+        </main>
+        <footer>
+            <p>20222 @ Todo lode De Derechos Reservador</p>
+            <span>
+                <a href="#"><img src="./img/social-instagram.png" alt="social-media"></a>
+                <a href="#"><img src="./img/social-facebook.png" alt="social-media"></a>
+                <a href="#"><img src="./img/social-twitter.png" alt="social-media"></a>
+                <a href="#"><img src="./img/social-whatsapp.png" alt="social-media"></a>
+            </span>
+        </footer>
+    </div>
+</body>
+
+</html>

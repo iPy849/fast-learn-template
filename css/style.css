@@ -1,0 +1,325 @@
+.global-container {
+  width: 1250px;
+  height: 1720px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 90px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  background-color: #08786A;
+}
+
+#popup-menu {
+  z-index: 10;
+  background-color: #08786A;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #01342E;
+  box-shadow: 3px 3px 5px #000;
+  padding: 1rem 2rem;
+}
+#popup-menu p[errormessage] {
+  line-height: normal;
+  font-size: 1rem;
+  padding: 1rem;
+  height: 100%;
+  width: fit-content;
+  color: #efefef;
+  background-color: #012B28;
+  border: 3px solid #ff3434;
+  display: none;
+}
+#popup-menu span#close-popup-menu {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 40px;
+  color: #012B28;
+  display: block;
+  padding: 0.5rem;
+  text-align: center;
+  cursor: default;
+}
+#popup-menu span#close-popup-menu:hover {
+  text-shadow: 0 0 2px #056154;
+}
+#popup-menu h2 {
+  color: #efefef;
+}
+#popup-menu form * {
+  display: block;
+  margin-bottom: 1rem;
+}
+#popup-menu form input {
+  color: #012B28;
+}
+#popup-menu form input:not(input[type=submit]) {
+  width: 30vw;
+  height: 3rem;
+  font-size: 20px;
+}
+#popup-menu form input[type=submit] {
+  float: right;
+  padding: 1rem;
+  border: none;
+  background-color: #056154;
+  border: 3px solid #012B28;
+  font-size: 28px;
+  color: #efefef;
+}
+#popup-menu form a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #efefef;
+  float: left;
+  display: block;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+#popup-menu form a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 100%;
+  height: 260px;
+  background-color: #056154;
+  box-shadow: 0 1px 10px #01342E;
+}
+header #logo {
+  width: 280px;
+  height: 136px;
+  padding-left: 78px;
+  padding-top: 58px;
+  padding-bottom: 64px;
+  float: left;
+}
+header .nav-interactions {
+  display: flex;
+  flex-direction: column;
+  width: 890px;
+  height: 258px;
+  float: right;
+}
+header .nav-interactions button {
+  width: 187px;
+  height: 62px;
+  padding: 22px;
+  margin-right: 60px;
+  margin-top: 50px;
+  margin-bottom: 45px;
+  border: none;
+  background-color: #14c2af;
+  align-self: flex-end;
+  font-size: 28px;
+}
+header .nav-interactions ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding-bottom: 78px;
+  padding-left: 0;
+}
+header .nav-interactions ul a {
+  font-size: 28px;
+  text-decoration: none;
+  color: #efefef;
+  margin-left: 40px;
+}
+
+main {
+  height: 1250px;
+  padding-top: 65px;
+  padding-left: 37px;
+  padding-right: 50px;
+  padding-bottom: 60px;
+}
+main .img-and-register {
+  height: 709px;
+}
+main .img-and-register .left-image {
+  float: left;
+  padding-right: 32px;
+}
+main .img-and-register .left-image img {
+  display: block;
+}
+main .img-and-register .left-image img:nth-child(2) {
+  padding-top: 35px;
+}
+main .img-and-register .right-form {
+  width: 756px;
+  float: right;
+}
+main .img-and-register .right-form h1,
+main .img-and-register .right-form h2 {
+  font-size: 48px;
+  color: #efefef;
+  padding: 0;
+  margin: 0;
+  padding-left: 12px;
+  font-style: italic;
+}
+main .img-and-register .right-form h2 {
+  margin-bottom: 36px;
+}
+main .img-and-register .right-form form {
+  background-color: #012B28;
+  width: 680px;
+  height: 487px;
+  border-radius: 15px;
+  padding-top: 46px;
+  padding-left: 40px;
+  padding-right: 35px;
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+}
+main .img-and-register .right-form form * {
+  margin-bottom: 20px;
+}
+main .img-and-register .right-form form input {
+  height: 28px;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 15px;
+}
+main .img-and-register .right-form form input::placeholder {
+  color: #000;
+  opacity: 1;
+  text-transform: uppercase;
+}
+main .img-and-register .right-form form h3 {
+  font-size: 32px;
+  padding: 0;
+  margin: 0;
+  color: #efefef;
+  font-weight: normal;
+}
+main .img-and-register .right-form form h4 {
+  margin: 0 0 20px 0;
+  font-size: 21.8px;
+  color: #efefef;
+  font-weight: normal;
+}
+main .img-and-register .right-form form h4:last-child {
+  font-weight: bolder;
+}
+main .img-and-register .right-form form input[list],
+main .img-and-register .right-form form input[type=date] {
+  width: 288px;
+}
+main .img-and-register .right-form form input[list] {
+  float: left;
+}
+main .img-and-register .right-form form input[type=date] {
+  float: right;
+}
+main .img-and-register .right-form form input[type=submit] {
+  height: 58px;
+  font-size: 24px;
+  padding: 18px;
+  background-color: #14c2af;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+  padding-bottom: 36px;
+}
+main aside h2 {
+  padding: 15px;
+  text-align: center;
+  font-size: 36px;
+  font-weight: normal;
+  font-style: italic;
+}
+main aside .card {
+  width: 540px;
+}
+main aside .card img {
+  margin-bottom: 35px;
+}
+main aside .card h3,
+main aside .card p {
+  padding: 0;
+  margin: 0;
+  color: #efefef;
+  font-weight: normal;
+}
+main aside .card h3 {
+  font-size: 32px;
+}
+main aside .card p {
+  font-size: 22px;
+}
+main aside .card button {
+  background-color: #14c2af;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  height: 60px;
+  width: 100%;
+  font-size: 28px;
+  margin-top: 22px;
+}
+main aside .card:first-child {
+  float: left;
+}
+main aside .card:last-child {
+  float: right;
+}
+
+footer {
+  width: 100%;
+  height: 90px;
+  background-color: #056154;
+}
+footer p {
+  padding-top: 20px;
+  padding-left: 30px;
+  color: #efefef;
+  font-size: 18px;
+  float: left;
+}
+footer span {
+  padding-right: 60px;
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 100%;
+  float: right;
+}
+footer span a {
+  margin-left: 20px;
+}
+
+* {
+  font-family: sans-serif;
+}
+
+body {
+  height: 1860px;
+  width: 100vw;
+  position: relative;
+  background-color: #001010;
+}
+body::before {
+  content: "";
+  background-image: url("../img/bg-texture.png");
+  width: 99.99vw;
+  height: 512px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*# sourceMappingURL=style.css.map */

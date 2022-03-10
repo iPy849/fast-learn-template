@@ -1,0 +1,88 @@
+@import 'colors';
+
+#popup-menu {
+    z-index         : 10;
+    background-color: $primary;
+    position        : fixed;
+    top             : 50%;
+    left            : 50%;
+    transform       : translate(-50%, -50%);
+    border          : 3px solid $primary-border;
+    box-shadow      : 3px 3px 5px $dark;
+    padding         : 1rem 2rem;
+
+    p[errormessage] {
+        line-height     : normal;
+        font-size       : 1rem;
+        padding         : 1rem;
+        height          : 100%;
+        width           : fit-content;
+        color           : $light;
+        background-color: $primary-even-darker;
+        border          : 3px solid $error;
+        display         : none;
+    }
+
+    span#close-popup-menu {
+        position  : absolute;
+        top       : 0;
+        right     : 0;
+        font-size : 40px;
+        color     : $primary-even-darker;
+        display   : block;
+        padding   : .5rem;
+        text-align: center;
+        cursor    : default;
+
+        &:hover {
+            text-shadow: 0 0 2px $primary-darker;
+        }
+    }
+
+    h2 {
+        color: $light;
+    }
+
+    form {
+        * {
+            display      : block;
+            margin-bottom: 1rem;
+        }
+
+        input {
+            color: $primary-even-darker;
+        }
+
+        input:not(input[type="submit"]) {
+            width    : 30vw;
+            height   : 3rem;
+            font-size: 20px;
+
+        }
+
+        input[type="submit"] {
+            float           : right;
+            padding         : 1rem;
+            border          : none;
+            background-color: $primary-darker;
+            border          : 3px solid $primary-even-darker;
+            font-size       : 28px;
+            color           : $light;
+        }
+
+        a {
+            font-size      : 18px;
+            text-decoration: none;
+            color          : $light;
+            float          : left;
+            display        : block;
+            margin         : 0;
+            padding        : 0;
+            position       : relative;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

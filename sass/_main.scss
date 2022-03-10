@@ -1,0 +1,177 @@
+@import 'colors';
+
+main {
+    height        : 1250px;
+    padding-top   : 65px;
+    padding-left  : 37px;
+    padding-right : 50px;
+    padding-bottom: 60px;
+
+    .img-and-register {
+        height: 709px;
+
+        .left-image {
+            float        : left;
+            padding-right: 32px;
+
+            img {
+                display: block;
+
+                &:nth-child(2) {
+                    padding-top: 35px;
+                }
+            }
+        }
+
+        .right-form {
+            width: 756px;
+            float: right;
+
+            h1,
+            h2 {
+                font-size   : 48px;
+                color       : $light;
+                padding     : 0;
+                margin      : 0;
+                padding-left: 12px;
+                font-style  : italic;
+            }
+
+            h2 {
+                margin-bottom: 36px;
+            }
+
+            form {
+                background-color: $primary-even-darker;
+                width           : 680px;
+                height          : 487px;
+                border-radius   : 15px;
+                padding-top     : 46px;
+                padding-left    : 40px;
+                padding-right   : 35px;
+                padding-bottom  : 30px;
+                display         : flex;
+                flex-direction  : column;
+
+                * {
+                    margin-bottom: 20px;
+                }
+
+                input {
+                    height     : 28px;
+                    font-size  : 18px;
+                    font-weight: bolder;
+                    padding    : 15px;
+
+                    &::placeholder {
+                        color         : $dark;
+                        opacity       : 1;
+                        text-transform: uppercase;
+                    }
+                }
+
+                h3 {
+                    font-size  : 32px;
+                    padding    : 0;
+                    margin     : 0;
+                    color      : $light;
+                    font-weight: normal;
+                }
+
+                h4 {
+                    margin     : 0 0 20px 0;
+                    font-size  : 21.8px;
+                    color      : $light;
+                    font-weight: normal;
+                }
+
+                h4:last-child {
+                    font-weight: bolder;
+                }
+
+                input[list],
+                input[type="date"] {
+                    width: 288px;
+                }
+
+                input[list] {
+                    float: left;
+                }
+
+                input[type="date"] {
+                    float: right;
+                }
+
+                input[type="submit"] {
+                    height          : 58px;
+                    font-size       : 24px;
+                    padding         : 18px;
+                    background-color: $secondary;
+                    border          : none;
+                    text-align      : center;
+                    vertical-align  : middle;
+                    padding-bottom  : 36px;
+                }
+
+
+            }
+
+        }
+    }
+
+    aside {
+        h2 {
+            padding    : 15px;
+            text-align : center;
+            font-size  : 36px;
+            font-weight: normal;
+            font-style : italic;
+        }
+
+        .card {
+            width: 540px;
+
+            img {
+                margin-bottom: 35px;
+            }
+
+            h3,
+            p {
+                padding    : 0;
+                margin     : 0;
+                color      : $light;
+                font-weight: normal;
+            }
+
+            h3 {
+                font-size: 32px;
+            }
+
+            p {
+                font-size: 22px;
+            }
+
+            button {
+                background-color: $secondary;
+                text-align      : center;
+                vertical-align  : middle;
+                border          : none;
+                height          : 60px;
+                width           : 100%;
+                font-size       : 28px;
+                margin-top      : 22px;
+            }
+
+            &:first-child {
+                float: left;
+            }
+
+            &:last-child {
+                float: right;
+            }
+
+        }
+
+    }
+
+}
